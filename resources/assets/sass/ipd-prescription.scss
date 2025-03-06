@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: DejaVu Sans, Arial, "Helvetica", Arial, "Liberation Sans",
+        sans-serif;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    padding: 0px 25px 0px 25px;
+    font-size: 14px;
+}
+
+@page {
+    margin: 20px 0 !important;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.w-50 {
+    width: 50% !important;
+}
+
+.text-end {
+    text-align: right !important;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.ms-auto {
+    margin-left: auto !important;
+}
+
+.px-30 {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.mb-0 {
+    margin-bottom: 0 !important;
+}
+
+.lh-1 {
+    line-height: 1 !important;
+}
+
+.company-logo {
+    margin: 0 auto;
+}
+
+.company-logo img {
+    width: auto;
+    height: 80px;
+}
+
+.vertical-align-top {
+    vertical-align: top !important;
+}
+
+.desc {
+    padding: 10px;
+    border-radius: 10px;
+    width: 50%;
+}
+
+.bg-light {
+    background-color: #f8f9fa;
+}
+
+hr {
+    margin: 15px 0px;
+    color: #f8f9fa;
+    background-color: #f8f9fa;
+    border-color: #f8f9fa;
+}
+
+.fw-6 {
+    font-weight: bold;
+}
+
+.mb-20 {
+    margin-bottom: 15px;
+}
+
+.heading {
+    padding: 10px;
+    background-color: #f8f9fa;
+    width: 250px;
+}
+
+.lh-2 {
+    line-height: 1.5 !important;
+}
+
+.font-color-gray {
+    color: #7a7a7a;
+}
+
+.main-heading {
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.header-right {
+    text-align: right;
+    vertical-align: top;
+}
+
+.logo,
+.hospital-name {
+    margin-bottom: 15px;
+}
+
+.font-weight-bold {
+    font-weight: bold;
+}
+
+.address {
+    margin-top: 60px;
+    width: 100%;
+}
+
+.address tr:first-child td {
+    padding-bottom: 10px;
+}
+
+.items-table {
+    width: 100%;
+    border: 0;
+    border-collapse: collapse;
+    margin-top: 30px;
+}
+
+.items-table thead {
+    background: #2f353a;
+    color: #fff;
+}
+
+.items-table td,
+.items-table th {
+    padding: 8px;
+    font-size: 14px;
+    border-bottom: 1px solid #ccc;
+    text-align: left;
+    vertical-align: top;
+}
+
+.patient-details {
+    vertical-align: top;
+}
+
+.patient-detail-one td,
+.patient-detail-two td {
+    padding: 5px;
+}
+
+.patient-detail-two {
+    float: left;
+}
+
+.patient-detail-heading {
+    font-size: medium;
+}
+
+.footer-note {
+    padding: 10px;
+    border-radius: 10px;
+    width: 97%;
+    margin-top: 20px;
+}
+
+.ipdFooterNoteData {
+    width: 95%;
+    word-wrap: break-word;
+    margin-top: 5px;
+}
+
+.header-note {
+    padding: 10px;
+    border-radius: 10px;
+    width: 97%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.ipdHeaderNoteData {
+    width: 95%;
+    word-wrap: break-word;
+    margin-top: 5px;
+}

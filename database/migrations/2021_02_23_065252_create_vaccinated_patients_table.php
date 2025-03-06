@@ -1,0 +1,41 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
+{
+    /**
+     * Run the migrations.
+     */
+    public function up(): void
+    {
+        Schema::create('vaccinated_patients', function (Blueprint $table) {
+            $table->increments('id')->index();
+            $table->unsignedInteger('patient_id')->index();
+            $table->unsignedInteger('vaccination_id')->index();
+            $table->string('vaccination_serial_number')->nullable();
+            $table->string('dose_number');
+            $table->dateTime('dose_given_date');
+            $table->text('description')->nullable();
+            $table->timestamps();
+
+            $table->foreign('patient_id')->references('id')->on('patients')
+                ->onDelete('cascade')
+                ->onUpdate('cascade');
+
+            $table->foreign('vaccination_id')->references('id')->on('vaccinations')
+                ->onDelete('cascade')
+                ->onUpdate('cascade');
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     */
+    public function down(): void
+    {
+        Schema::dropIfExists('vaccinations');
+    }
+};

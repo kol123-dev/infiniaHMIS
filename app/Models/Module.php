@@ -1,0 +1,75 @@
+<?php
+
+namespace App\Models;
+
+use Carbon\Carbon;
+use Illuminate\Database\Eloquent\Model;
+use Rennokki\QueryCache\Traits\QueryCacheable;
+
+/**
+ * Class Module
+ *
+ * @property int $id
+ * @property string $name
+ * @property bool $is_active
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
+ *
+ * @method static \Illuminate\Database\Eloquent\Builder|Module newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|Module newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|Module query()
+ * @method static \Illuminate\Database\Eloquent\Builder|Module whereCreatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Module whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Module whereIsActive($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Module whereName($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Module whereUpdatedAt($value)
+ *
+ * @mixin Model
+ *
+ * @property string|null $route
+ *
+ * @method static \Illuminate\Database\Eloquent\Builder|Module whereRoute($value)
+ */
+class Module extends Model
+{
+    use QueryCacheable;
+
+    //    public $cacheFor = 3600; // cache time, in seconds
+
+    public $table = 'modules';
+
+    const STATUS_ALL = 2;
+
+    const ACTIVE = 1;
+
+    const INACTIVE = 0;
+
+    const STATUS_ARR = [
+        self::STATUS_ALL => 'All',
+        self::ACTIVE => 'Active',
+        self::INACTIVE => 'Deactive',
+    ];
+
+    const FILTER_STATUS_ARR = [
+        0 => 'All',
+        1 => 'Active',
+        2 => 'Deactive',
+    ];
+
+    public $fillable = [
+        'name',
+        'is_active',
+        'route',
+    ];
+
+    protected $casts = [
+        'id' => 'integer',
+        'name' => 'string',
+        'is_active' => 'boolean',
+        'route' => 'string',
+    ];
+
+    public static $rules = [
+        'name' => 'required|min:2|unique:modules,name',
+    ];
+}

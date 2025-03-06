@@ -1,0 +1,120 @@
+
+@import "../scss/variables.scss";
+
+.appointment-page {
+    .appointment-section {
+        .appointment-form {
+            background-color: $white;
+            padding: 40px;
+            box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.08);
+            border-radius: 20px;
+
+            &__input-block {
+                margin-bottom: 20px;
+            }
+
+            @media (max-width: 767px) {
+                padding: 20px;
+            }
+
+            .grp-radio {
+                height: 50px;
+            }
+        }
+
+        &::after {
+            @media (min-width: 1200px) {
+                background-color: #f5f8f9;
+                content: "";
+                display: block;
+                max-width: 1420px;
+                position: absolute;
+                height: auto;
+                border-radius: 20px;
+                margin: auto;
+                left: 0;
+                right: 0;
+                bottom: -40px;
+                z-index: -1;
+                min-height: 400px;
+            }
+
+            @media (max-width: 1399px) and (min-width: 1200px) {
+                max-width: 1200px;
+            }
+        }
+    }
+
+    .contact-details-section {
+        .contact-details-block {
+            padding-top: 40px;
+            padding-bottom: 20px;
+
+            .icon-details-box {
+                width: 80px;
+                height: 80px;
+                border-radius: 50px;
+                margin-top: -40px;
+                position: relative;
+                z-index: 1;
+            }
+
+            &:nth-child(1) {
+                .icon-details-box {
+                    background-color: #EBF9F2;;
+                    color: $green;
+                }
+            }
+
+            &:nth-child(2) {
+                .icon-details-box {
+                    background-color: #FFF4ED;
+                    color: $orange;
+                }
+            }
+        }
+    }
+}
+.front-appointment-switch:checked{
+    background-color: $orange !important;
+}
+.front-appointment-switch:focus {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3E%3Ccircle r='3' fill='none'/%3E%3C/svg%3E");
+}
+
+.custom-calendar {
+    box-shadow: 0 0 1.25rem rgba(108, 118, 134, 0.1) !important;
+    border-radius: 25px !important;
+    background-color:#ffffff !important;
+
+    .flatpickr-day  {
+        color:#507392 !important;
+        border: 1px solid #eeeeee !important;
+        background: #eeeeee !important;
+        width: 30px !important;
+        height: 30px !important;
+        line-height: 30px !important;
+        margin: 1px !important;
+    }
+    .dayContainer {
+        font-size:16px !important;
+    }
+    .dayContainer,.flatpickr-weekdays{
+        padding:4px 8px !important;
+
+    }
+    span.flatpickr-weekday {
+        color:#07003b !important;
+        font-weight:normal !important;
+        font-size:14px !important;
+    }
+    .flatpickr-current-month .flatpickr-monthDropdown-months,.flatpickr-current-month input.cur-year {
+        font-weight: bold !important;
+        color:#07003b !important;
+    }
+
+    .selected {
+        background: #161e54 !important;
+        color:white !important;
+    }
+}

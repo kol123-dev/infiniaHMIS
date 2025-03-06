@@ -1,0 +1,1547 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Upgrade Guide | InfyHMS</title>
+    <meta name="description" content="InfyHMS is to give an easy way to connect with your staff">
+    <link rel="icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/fontawesome.css">
+    <link rel="stylesheet" href="../css/circular-std-font-face.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.12/css/lightgallery.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.3.2/js/lightgallery.js"></script>
+    <meta name="description" content="InfyHMS is to give an easy way to connect with your staff">
+    <link rel="preload" href="../assets/css/0.styles.c7307597.css" as="style">
+    <link rel="preload" href="../js/styles.js" as="script">
+    <link rel="preload" href="../js/1.js" as="script">
+    <link rel="preload" href="../js/2.js" as="script">
+    <link rel="preload" href="../js/12.js" as="script">
+    <link rel="prefetch" href="../js/10.js">
+    <link rel="prefetch" href="../js/11.js">
+    <link rel="prefetch" href="../js/3.js">
+    <link rel="prefetch" href="../js/4.js">
+    <link rel="prefetch" href="../js/5.js">
+    <link rel="prefetch" href="../js/6.js">
+    <link rel="prefetch" href="../js/7.js">
+    <link rel="prefetch" href="../js/8.js">
+    <link rel="prefetch" href="../js/9.js">
+    <link rel="stylesheet" href="../assets/css/0.styles.c7307597.css">
+</head>
+<body>
+<div id="app" data-server-rendered="true">
+    <div class="theme-container">
+        <header class="navbar">
+            <div class="sidebar-button">
+                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512"
+                     class="icon">
+                    <path fill="currentColor"
+                          d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path>
+                </svg>
+            </div>
+            <a href="../index.html" class="home-link router-link-active"><img src="../images/logo.png" alt="InfyHMS" class="logo">
+                <span class="site-name can-hide">InfyHMS</span></a>
+            <div class="links"><!---->
+                <nav class="nav-links can-hide">
+                    <div class="nav-item"><a href="../index.html" class="nav-link">Home</a></div>
+                    <div class="nav-item"><a href="../docs/index.html" class="nav-link">Docs</a></div>
+                    <div class="nav-item"><a href="../releases/index.html" class="nav-link">Releases</a></div>
+                    <div class="nav-item"><a href="../upgrade/index.html"
+                                             class="nav-link router-link-exact-active router-link-active">Upgrade
+                        Guide</a></div> <!----></nav>
+            </div>
+        </header>
+        <div class="sidebar-mask"></div>
+        <aside class="sidebar">
+            <nav class="nav-links">
+                <div class="nav-item"><a href="../index.html" class="nav-link">Home</a></div>
+                <div class="nav-item"><a href="../docs/index.html" class="nav-link">Docs</a></div>
+                <div class="nav-item"><a href="../releases/index.html" class="nav-link">Releases</a></div>
+                <div class="nav-item"><a href="../upgrade/index.html" class="nav-link router-link-exact-active router-link-active">Upgrade
+                    Guide</a></div> <!----></nav>
+            <ul class="sidebar-links">
+                <li>
+                    <section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Upgrade Guide</span>
+                        <!----></p>
+                        <ul class="sidebar-links sidebar-group-items">
+                            
+                                <ul class="sidebar-sub-headers">
+                                    <li class="sidebar-sub-header">
+                                        <a href="#upgrade-to-latest-version" class="sidebar-link">
+                                            Upgrading to latest version
+                                        </a>
+                                    </li>
+                                    <li class="sidebar-sub-header">
+                                        <a href="#upgrading-from-v11.0.0-to-v11-1-0" class="sidebar-link">
+                                            Upgrading from v11.0.0 to v11.1.0
+                                        </a>
+                                    </li>
+                                    <li class="sidebar-sub-header">
+                                        <a href="#upgrading-from-v10.1.0-to-v11-0-0" class="sidebar-link">
+                                            Upgrading from v10.1.0 to v11.0.0
+                                        </a>
+                                    </li>
+                                    <li class="sidebar-sub-header">
+                                        <a href="#upgrading-from-v10-0-0-to-v10-1-0" class="sidebar-link">
+                                            Upgrading from v10.0.0 to v10.1.0
+                                        </a>
+                                    </li>
+                                    <li class="sidebar-sub-header">
+                                        <a href="#upgrading-from-v9-5-0-to-v10-0-0" class="sidebar-link">
+                                            Upgrading from v9.5.0 to v10.0.0
+                                        </a>
+                                    </li>
+                                    <li class="sidebar-sub-header">
+                                        <a href="#upgrading-from-v9-4-1-to-v9-5-0" class="sidebar-link">
+                                            Upgrading from v9.4.1 to v9.5.0
+                                        </a>
+                                    </li>
+                                    <li class="sidebar-sub-header">
+                                        <a href="#upgrading-from-v9-4-0-to-v9-4-1" class="sidebar-link">
+                                            Upgrading from v9.4.0 to v9.4.1
+                                        </a>
+                                    </li>
+                                    <li class="sidebar-sub-header">
+                                        <a href="#upgrading-from-v9-3-0-to-v9-3-1" class="sidebar-link">
+                                            Upgrading from v9.3.0 to v9.4.0
+                                        </a>
+                                    </li>
+                                    <li class="sidebar-sub-header">
+                                        <a href="#upgrading-from-v9-2-0-to-v9-3-0" class="sidebar-link">
+                                            Upgrading from v9.2.0 to v9.3.0
+                                        </a>
+                                    </li>
+                                    <li class="sidebar-sub-header">
+                                        <a href="#upgrading-from-v9-1-0-to-v9-2-0" class="sidebar-link">
+                                            Upgrading from v9.1.0 to v9.2.0
+                                        </a>
+                                    </li>
+                                    <li class="sidebar-sub-header">
+                                        <a href="#upgrading-from-v9-0-1-to-v9-1-0" class="sidebar-link">
+                                            Upgrading from v9.0.1 to v9.1.0
+                                        </a>
+                                    </li>
+                                    <li class="sidebar-sub-header">
+                                        <a href="#upgrading-from-v9-0-0-to-v9-0-1" class="sidebar-link">
+                                            Upgrading from v9.0.0 to v9.0.1
+                                        </a>
+                                    </li>
+                                    <li class="sidebar-sub-header">
+                                        <a href="#upgrading-from-v8-1-0-to-v9-0-0" class="sidebar-link">
+                                            Upgrading from v8.1.0 to v9.0.0
+                                        </a>
+                                    </li>
+                                    <li class="sidebar-sub-header">
+                                        <a href="#upgrading-from-v8-0-0-to-v8-1-0" class="sidebar-link">
+                                            Upgrading from v8.0.0 to v8.1.0
+                                        </a>
+                                    </li>
+                                    <li class="sidebar-sub-header"><a href="#upgrading-from-v7-0-0-to-v8-0-0"
+                                                                      class="sidebar-link">Upgrading from v7.0.0 to
+                                        v8.0.0</a></li>
+                                    <li class="sidebar-sub-header"><a href="#upgrading-from-v6-0-0-to-v7-0-0"
+                                                                      class="sidebar-link">Upgrading from v6.0.0 to
+                                        v7.0.0</a></li>
+                                    <li class="sidebar-sub-header"><a href="#upgrading-from-v5-0-0-to-v6-0-0"
+                                                                      class="sidebar-link">Upgrading from v5.0.0 to
+                                        v6.0.0</a></li>
+                                    <li class="sidebar-sub-header"><a href="#upgrading-from-v4-0-1-to-v5-0-0"
+                                                                      class="sidebar-link">Upgrading from v4.0.1 to
+                                        v5.0.0</a></li>
+                                    <li class="sidebar-sub-header"><a href="#upgrading-from-v4-0-0-to-v4-0-1"
+                                                                      class="sidebar-link">Upgrading from v4.0.0 to
+                                        v4.0.1</a></li>
+                                    <li class="sidebar-sub-header"><a href="#upgrading-from-v3-4-1-to-v4-0-0"
+                                                                      class="sidebar-link">Upgrading from v3.4.1 to
+                                        v4.0.0</a></li>
+                                    <li class="sidebar-sub-header"><a href="#upgrading-from-v3-4-0-to-v3-4-1"
+                                                                      class="sidebar-link">Upgrading from v3.4.0 to
+                                        v3.4.1</a></li>
+                                    <li class="sidebar-sub-header"><a href="#upgrading-from-v3-3-0-to-v3-4-0"
+                                                                      class="sidebar-link">Upgrading from v3.3.0 to
+                                        v3.4.0</a></li>
+                                    <li class="sidebar-sub-header"><a href="#upgrading-from-v3-2-0-to-v3-3-0"
+                                                                      class="sidebar-link">Upgrading from v3.2.0 to
+                                        v3.3.0</a></li>
+                                    <li class="sidebar-sub-header"><a href="#upgrading-from-v3-1-0-to-v3-2-0"
+                                                                      class="sidebar-link">Upgrading from v3.1.0 to
+                                        v3.2.0</a></li>
+                                    <li class="sidebar-sub-header"><a href="#upgrading-from-v3-0-0-to-v3-1-0"
+                                                                      class="sidebar-link">Upgrading from v3.0.0 to
+                                        v3.1.0</a></li>
+                                    <li class="sidebar-sub-header"><a href="#upgrading-from-v2-0-0-to-v3-0-0"
+                                                                      class="sidebar-link">Upgrading from v2.0.0 to
+                                        v3.0.0</a></li>
+                                    <li class="sidebar-sub-header"><a href="#upgrading-from-v1-6-0-to-v2-0-0"
+                                                                      class="sidebar-link">Upgrading from v1.6.0 to
+                                        v2.0.0</a></li>
+                                    <li class="sidebar-sub-header"><a href="#upgrading-from-v1-5-1-to-v1-6-0"
+                                                                      class="sidebar-link">Upgrading from v1.5.1 to
+                                        v1.6.0</a></li>
+                                    <li class="sidebar-sub-header"><a href="#upgrading-from-v1-5-0-to-v1-5-1"
+                                                                      class="sidebar-link">Upgrading from v1.5.0 to
+                                        v1.5.1</a></li>
+                                    <li class="sidebar-sub-header"><a href="#upgrading-from-v1-4-0-to-v1-5-0"
+                                                                      class="sidebar-link">Upgrading from v1.4.0 to
+                                        v1.5.0</a></li>
+                                    <li class="sidebar-sub-header"><a href="#upgrading-from-v1-3-1-to-v1-4-0"
+                                                                      class="sidebar-link">Upgrading from v1.3.1 to
+                                        v1.4.0</a></li>
+                                    <li class="sidebar-sub-header"><a href="#upgrading-from-v1-3-0-to-v1-3-1"
+                                                                      class="sidebar-link">Upgrading from v1.3.0 to
+                                        v1.3.1</a></li>
+                                    <li class="sidebar-sub-header"><a href="#upgrading-from-v1-2-0-to-v1-3-0"
+                                                                      class="sidebar-link">Upgrading from v1.2.0 to
+                                        v1.3.0</a></li>
+                                    <li class="sidebar-sub-header"><a href="#upgrading-from-v1-1-1-to-v1-2-0"
+                                                                      class="sidebar-link">Upgrading from v1.1.1 to
+                                        v1.2.0</a></li>
+                                    <li class="sidebar-sub-header"><a href="#upgrading-from-v1-1-0-to-v1-1-1"
+                                                                      class="sidebar-link">Upgrading from v1.1.0 to
+                                        v1.1.1</a></li>
+                                    <li class="sidebar-sub-header"><a href="#upgrading-from-v1-0-0-to-v1-1-0"
+                                                                      class="sidebar-link">Upgrading from v1.0.0 to
+                                        v1.1.0</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </section>
+                </li>
+            </ul>
+        </aside>
+        <main class="page">
+            <div class="theme-default-content content__default"><h1 id="upgrade-guide"><a href="#upgrade-guide"
+                                                                                          class="header-anchor">#</a>
+                Upgrade Guide</h1>
+                <p>Before starting upgrade we recommenced to backup your files and export your current database.</p>
+                <p><strong>NOTE : If you are non-technical person then please use dist.zip to replace files and if you
+                    are technical person then use src.zip</strong></p>
+                <h2 id="upgrade-to-latest-version"><a href="#upgrade-to-latest-version" class="header-anchor">#</a>
+                    Upgrade to latest version</h2>
+
+                <h3 id="prerequisite">
+                    <a href="#prerequisite" class="header-anchor">#</a> Prerequisite
+                </h3>
+                <br>
+                    Before starting upgrade we recommend to back up your all files and export your current database.
+                <br>
+                    so in case if anything goes wrong, you can restore the previous version.
+                <br><br>
+                <ul>
+                    <li>
+                        Backup your whole folder
+                    </li>
+                    <li>
+                        Backup & Export your database via phpymadmin
+                    </li>
+                </ul>
+                
+                <h4 id="for-non-technical-users11-2-0">
+                    <a href="#for-non-technical-users11-2-0" class="header-anchor">#</a> 
+                    Backup Sensitive Files and Folders
+                </h4>
+                <br>
+                    Backup the following folders and files.
+                <ul>
+                    <li>File - <code>.env</code></li>
+                    <li>Folder - Any new languages that you added in - <code>resources/lang/</code></li>
+                    <li>Folder - <code>public/uploads/</code></li>
+                </ul>
+                <h4>
+                    <a href="#for-non-technical-users11-2-0" class="header-anchor">#</a>
+                    Replace the latest code
+                </h4>
+                <br>
+                <ul>
+                    <li>
+                        Delete all your existing code (you can also rename the current folder or move all content to some other folder, if possible)
+                    </li>
+                    <li>Upload the latest <code>dist.zip</code> to the server</li>
+                    <li>Extract the zip</li>
+                    <li>Put old <code>.env</code> file back</li>
+                    <li>Put <code>resources/lang/</code> and <code>public/uploads</code> folder back (or you can merge)</li>
+                    <li>Edit <code>.env</code> and change <code>UPGRADE_MODE=true</code></li>
+                    <li>Run a database upgrade script <code>https://{YOUR_URL}/upgrade/database</code></li>
+                    <li>Edit <code>.env</code> and change <code>UPGRADE_MODE=false</code></li>
+                    <li>Verify that latest version is visible in footer</li>
+                </ul>
+                Check everything is working fine.
+
+                <h4>
+                    <a href="#for-non-technical-users11-2-0" class="header-anchor">#</a>
+                    Post Upgrade Steps
+                </h4>
+                <br>
+                <ul>
+                    <li>Add newly added languages keys (if you have added a new languages)</li>
+                    <li>Apply/Replace any custom changes that you made to the code.</li>
+                </ul>
+
+                Hope your upgrade went well and working fine. If you are facing any problem with the upgrade, feel to contact our support at <a href="https://infyomlabs.authordesk.app/">https://infyomlabs.authordesk.app</a>
+<hr>
+
+
+                <h2 id="old-upgrade-guide" class="header-anchor">
+                    <a href="#old-upgrade-guide" class="header-anchor">#</a> Old Upgrade guide
+                </h2>
+                <!-----v11.0.0 section start----------->
+                <h3 id="upgrading-from-v11.0.0-to-v11-1-0">
+                    <a href="#upgrading-from-v11-0-0-to-v11-1-0" class="header-anchor">#</a> Upgrading from v11.0.0 to
+                    v11.1.0
+                </h3>
+                <h4 id="for-technical-users11-1-0">
+                    <a href="#for-technical-users11-1-0" class="header-anchor">#</a> For Technical Users:
+                </h4>
+                <ul>
+                    <li>Download <code>v11.1.0</code></li>
+                    <li>Backup you current version files and DB</li>
+                    <li>If you have manually changed any files then please take a backup of them. After replacing files,
+                        you can again get that portion of code into some particular files.
+                    </li>
+                    <li>Replace <code>v11.1.0</code> files into your existing version <code>v11.0.0</code></li>
+                    <li>Run <code>composer install</code> to update composer dependencies</li>
+                    <li>Run <code>npm install</code></li>
+                    <li>And at last Run <code>npm run dev</code> to make new build</li>
+                    <li>That's it!, you are ready to go with new version <code>v11.1.0</code></li>
+                </ul>
+                <h4 id="for-non-technical-users11-1-0">
+                    <a href="#for-non-technical-users11-1-0" class="header-anchor">#</a> For Non Technical Users:
+                </h4>
+                <ul>
+                    <li>Download <code>v11.1.0</code></li>
+                    <li>Backup you current version files and DB</li>
+                    <li>If you have manually changed any files then please take a backup of them. After replacing files,
+                        you can again get that portion of code into some particular files.
+                    </li>
+                    <li>Replace <code>v11.1.0</code> files/directories into your existing version <code>v11.0.0</code>
+                    </li>
+                    <li>That's it!, you are ready to go with new version <code>v11.1.0</code></li>
+                </ul>
+                
+                <!-----v11.0.0 section start----------->
+                <h3 id="upgrading-from-v10.1.0-to-v11-0-0">
+                    <a href="#upgrading-from-v10-1-0-to-v11-1-0" class="header-anchor">#</a> Upgrading from v10.1.0 to
+                    v11.0.0
+                </h3>
+                <h4 id="for-technical-users11-0-0">
+                    <a href="#for-technical-users11-0-0" class="header-anchor">#</a> For Technical Users:
+                </h4>
+                <ul>
+                    <li>Download <code>v11.0.0</code></li>
+                    <li>Backup you current version files and DB</li>
+                    <li>If you have manually changed any files then please take a backup of them. After replacing files,
+                        you can again get that portion of code into some particular files.
+                    </li>
+                    <li>Replace <code>v11.0.0</code> files into your existing version <code>v10.1.0</code></li>
+                    <li>Run <code>composer install</code> to update composer dependencies</li>
+                    <li>Run <code>php artisan migrate</code> to run migrations</li>
+                    <li>Run <code>npm install</code></li>
+                    <li>And at last Run <code>npm run dev</code> to make new build</li>
+                    <li>That's it!, you are ready to go with new version <code>v11.0.0</code></li>
+                </ul>
+                <h4 id="for-non-technical-users11-0-0">
+                    <a href="#for-non-technical-users11-0-0" class="header-anchor">#</a> For Non Technical Users:
+                </h4>
+                <ul>
+                    <li>Download <code>v11.0.0</code></li>
+                    <li>Backup you current version files and DB</li>
+                    <li>If you have manually changed any files then please take a backup of them. After replacing files,
+                        you can again get that portion of code into some particular files.
+                    </li>
+                    <li>Replace <code>v11.0.0</code> files/directories into your existing version <code>v10.1.0</code>
+                    </li>
+                    <li>That's it!, you are ready to go with new version <code>v11.0.0</code></li>
+                </ul>
+                <!-----v11.0.0 section end-------------->
+
+                <!-----v10.0.0 section start----------->
+                <h3 id="upgrading-from-v10-0-0-to-v10-1-0">
+                    <a href="upgrading-from-v10-0-0-to-v10-1-0" class="header-anchor">#</a> Upgrading from v10.0.0 to
+                    v10.1.0
+                </h3>
+                <h4 id="for-technical-users10-1-0">
+                    <a href="#for-technical-users10-1-0" class="header-anchor">#</a> For Technical Users:
+                </h4>
+                <ul>
+                    <li>Download <code>v10.1.0</code></li>
+                    <li>Backup you current version files and DB</li>
+                    <li>If you have manually changed any files then please take a backup of them. After replacing files,
+                        you can again get that portion of code into some particular files.
+                    </li>
+                    <li>Replace <code>v10.1.0</code> files into your existing version <code>v10.0.0</code></li>
+                    <li>Run <code>composer install</code> to update composer dependencies</li>
+                    <li>Run <code>php artisan migrate</code> to run migrations</li>
+                    <li>Run <code>npm install</code></li>
+                    <li>And at last Run <code>npm run dev</code> to make new build</li>
+                    <li>That's it!, you are ready to go with new version <code>v10.1.0</code></li>
+                </ul>
+                <h4 id="for-non-technical-users10-1-0">
+                    <a href="#for-non-technical-users10-1-0" class="header-anchor">#</a> For Non Technical Users:
+                </h4>
+                <ul>
+                    <li>Download <code>v10.1.0</code></li>
+                    <li>Backup you current version files and DB</li>
+                    <li>If you have manually changed any files then please take a backup of them. After replacing files,
+                        you can again get that portion of code into some particular files.
+                    </li>
+                    <li>Replace <code>v10.1.0</code> files/directories into your existing version <code>v10.1.0</code>
+                    </li>
+                    <li>Now please call this url once <code>YOUR_APP_URL/upgrade-to-v10.1.0</code></li>
+                    <li>That's it!, you are ready to go with new version <code>v10.1.0</code></li>
+                </ul>
+                <!-----v10.0.0 section end-------------->
+
+                <!-----v10.0.0 section start----------->
+                <h3 id="upgrading-from-v9-5-0-to-v10-0-0">
+                    <a href="#upgrading-from-v9-5-0-to-v10-0-0" class="header-anchor">#</a> Upgrading from v9.5.0 to
+                    v10.0.0
+                </h3>
+                <h4 id="for-technical-users10-0-0">
+                    <a href="#for-technical-users10-0-0" class="header-anchor">#</a> For Technical Users:
+                </h4>
+                <ul>
+                    <li>Download <code>v10.0.0</code></li>
+                    <li>Backup you current version files and DB</li>
+                    <li>If you have manually changed any files then please take a backup of them. After replacing files,
+                        you can again get that portion of code into some particular files.
+                    </li>
+                    <li>Replace <code>v10.0.0</code> files into your existing version <code>v9.5.0</code></li>
+                    <li>Run <code>composer install</code> to update composer dependencies</li>
+                    <li>Run <code>php artisan migrate</code> to run migrations</li>
+                    <li>Run <code>npm install</code></li>
+                    <li>And at last Run <code>npm run dev</code> to make new build</li>
+                    <li>That's it!, you are ready to go with new version <code>v10.0.0</code></li>
+                </ul>
+                <h4 id="for-non-technical-users10-0-0">
+                    <a href="#for-non-technical-users10-0-0" class="header-anchor">#</a> For Non Technical Users:
+                </h4>
+                <ul>
+                    <li>Download <code>v10.0.0</code></li>
+                    <li>Backup you current version files and DB</li>
+                    <li>If you have manually changed any files then please take a backup of them. After replacing files,
+                        you can again get that portion of code into some particular files.
+                    </li>
+                    <li>Replace <code>v10.0.0</code> files/directories into your existing version <code>v9.5.0</code>
+                    </li>
+                    <li>Now please call this url once <code>YOUR_APP_URL/upgrade-to-v10.0.0</code></li>
+                    <li>That's it!, you are ready to go with new version <code>v10.0.0</code></li>
+                </ul>
+                <!-----v10.0.0 section end-------------->
+
+                <!-----v9.5.0 section start----------->
+                <h3 id="upgrading-from-v9-4-1-to-v9-5-0">
+                    <a href="#upgrading-from-v9-4-1-to-v9-5-0" class="header-anchor">#</a> Upgrading from v9.4.1 to
+                    v9.5.0
+                </h3>
+                <h4 id="for-technical-users9-5-0">
+                    <a href="#for-technical-users9-5-0" class="header-anchor">#</a> For Technical Users:
+                </h4>
+                <ul>
+                    <li>Download <code>v9.5.0</code></li>
+                    <li>Backup you current version files and DB</li>
+                    <li>If you have manually changed any files then please take a backup of them. After replacing files,
+                        you can again get that portion of code into some particular files.
+                    </li>
+                    <li>Replace <code>v9.5.0</code> files into your existing version <code>v9.4.1</code></li>
+                    <li>Run <code>composer install</code> to update composer dependencies</li>
+                    <li>Run <code>php artisan migrate</code> to run migrations</li>
+                    <li>Run <code>npm install</code></li>
+                    <li>And at last Run <code>npm run dev</code> to make new build</li>
+                    <li>That's it!, you are ready to go with new version <code>v9.5.0</code></li>
+                </ul>
+                <h4 id="for-non-technical-users9-5-0">
+                    <a href="#for-non-technical-users9-5-0" class="header-anchor">#</a> For Non Technical Users:
+                </h4>
+                <ul>
+                    <li>Download <code>v9.5.0</code></li>
+                    <li>Backup you current version files and DB</li>
+                    <li>If you have manually changed any files then please take a backup of them. After replacing files,
+                        you can again get that portion of code into some particular files.
+                    </li>
+                    <li>Replace <code>v9.5.0</code> files/directories into your existing version <code>v9.4.1</code>
+                    </li>
+                    <li>Now please call this url once <code>YOUR_APP_URL/upgrade-to-v9-5-0</code></li>
+                    <li>That's it!, you are ready to go with new version <code>v9.5.0</code></li>
+                </ul>
+                <!-----v9.5.0 section end-------------->
+                
+                <!-----v9.4.1 section start----------->
+                <h3 id="upgrading-from-v9-4-0-to-v9-4-1">
+                    <a href="#upgrading-from-v9-4-0-to-v9-4-1" class="header-anchor">#</a> Upgrading from v9.4.0 to 
+                    v9.4.1
+                </h3>
+                <h4 id="for-technical-users9-4-1">
+                    <a href="#for-technical-users9-4-1" class="header-anchor">#</a> For Technical Users:
+                </h4>
+                <ul>
+                    <li>Download <code>v9.4.1</code></li>
+                    <li>Backup you current version files and DB</li>
+                    <li>If you have manually changed any files then please take a backup of them. After replacing files,
+                        you can again get that portion of code into some particular files.
+                    </li>
+                    <li>Replace <code>v9.4.1</code> files into your existing version <code>v9.4.0</code></li>
+                    <li>Run <code>composer install</code> to update composer dependencies</li>
+                    <li>Run <code>npm install</code></li>
+                    <li>And at last Run <code>npm run dev</code> to make new build</li>
+                    <li>That's it!, you are ready to go with new version <code>v9.4.1</code></li>
+                </ul>
+                <h4 id="for-non-technical-users9-4-1">
+                    <a href="#for-non-technical-users9-4-1" class="header-anchor">#</a> For Non Technical Users:
+                </h4>
+                <ul>
+                    <li>Download <code>v9.4.1</code></li>
+                    <li>Backup you current version files and DB</li>
+                    <li>If you have manually changed any files then please take a backup of them. After replacing files,
+                        you can again get that portion of code into some particular files.
+                    </li>
+                    <li>Replace <code>v9.4.1</code> files/directories into your existing version <code>v9.4.0</code>
+                    </li>
+                    <li>That's it!, you are ready to go with new version <code>v9.4.1</code></li>
+                </ul>
+                <!-----v9.4.1 section end-------------->
+                
+                <!-----v9.4.0 section start----------->
+                <h3 id="upgrading-from-v9-3-0-to-v9-3-1">
+                    <a href="#upgrading-from-v9-3-0-to-v9-3-1" class="header-anchor">#</a> Upgrading from v9.3.0 to v9.4.0
+                </h3>
+                <h4 id="for-technical-users9-3-1">
+                    <a href="#for-technical-users9-3-1" class="header-anchor">#</a> For Technical Users:
+                </h4>
+                <ul>
+                    <li>Download <code>v9.4.0</code></li>
+                    <li>Backup you current version files and DB</li>
+                    <li>If you have manually changed any files then please take a backup of them. After replacing files,
+                        you can again get that portion of code into some particular files.
+                    </li>
+                    <li>Replace <code>v9.4.0</code> files into your existing version <code>v9.3.0</code></li>
+                    <li>Run <code>composer install</code> to update composer dependencies</li>
+                    <li>Run <code>npm install</code></li>
+                    <li>And at last Run <code>npm run dev</code> to make new build</li>
+                    <li>Set <code>NOCAPTCHA_SECRET</code> & <code>NOCAPTCHA_SITEKEY</code> at .env file.
+                        <a href="https://www.iqcomputing.com/support/articles/generate-google-recaptcha-v2-keys/">[Here]</a> is link to generate and get the keys of google captcha.</li>
+                    <li>That's it!, you are ready to go with new version <code>v9.4.0</code></li>
+                </ul>
+                <h4 id="for-non-technical-users9-3-1">
+                    <a href="#for-non-technical-users9-3-1" class="header-anchor">#</a> For Non Technical Users:
+                </h4>
+                <ul>
+                    <li>Download <code>v9.4.0</code></li>
+                    <li>Backup you current version files and DB</li>
+                    <li>If you have manually changed any files then please take a backup of them. After replacing files,
+                        you can again get that portion of code into some particular files.
+                    </li>
+                    <li>Replace <code>v9.4.0</code> files/directories into your existing version <code>v9.3.0</code>
+                    </li>
+                    <li>Set <code>NOCAPTCHA_SECRET</code> & <code>NOCAPTCHA_SITEKEY</code> at .env file.
+                        <a href="https://www.iqcomputing.com/support/articles/generate-google-recaptcha-v2-keys/">[Here]</a> is link to generate and get the keys of google captcha.</li>
+                    <li>That's it!, you are ready to go with new version <code>v9.4.0</code></li>
+                </ul>
+                <!-----v9.3.0 section end-------------->
+
+                <!-----v9.3.0 section start----------->
+                <h3 id="upgrading-from-v9-2-0-to-v9-3-0">
+                    <a href="#upgrading-from-v9-2-0-to-v9-3-0" class="header-anchor">#</a> Upgrading from v9.2.0 to v9.3.0
+                </h3>
+                <h4 id="for-technical-users9-3-0">
+                    <a href="#for-technical-users9-3-0" class="header-anchor">#</a> For Technical Users:
+                </h4>
+                <ul>
+                    <li>Download <code>v9.3.0</code></li>
+                    <li>Backup you current version files and DB</li>
+                    <li>If you have manually changed any files then please take a backup of them. After replacing files,
+                        you can again get that portion of code into some particular files.
+                    </li>
+                    <li>Replace <code>v9.3.0</code> files into your existing version <code>v9.2.0</code></li>
+                    <li>And at last Run <code>npm run dev</code> to make new build</li>
+                    <li>That's it!, you are ready to go with new version <code>v9.3.0</code></li>
+                </ul>
+                <h4 id="for-non-technical-users9-3-0">
+                    <a href="#for-non-technical-users9-3-0" class="header-anchor">#</a> For Non Technical Users:
+                </h4>
+                <ul>
+                    <li>Download <code>v9.3.0</code></li>
+                    <li>Backup you current version files and DB</li>
+                    <li>If you have manually changed any files then please take a backup of them. After replacing files,
+                        you can again get that portion of code into some particular files.
+                    </li>
+                    <li>Replace <code>v9.3.0</code> files/directories into your existing version <code>v9.2.0</code>
+                    </li>
+                    <li>That's it!, you are ready to go with new version <code>v9.3.0</code></li>
+                </ul>
+                <!-----v9.3.0 section end-------------->
+                
+                <!-----v9.2.0 section start----------->
+                <h3 id="upgrading-from-v9-1-0-to-v9-2-0">
+                    <a href="#upgrading-from-v9-1-0-to-v9-2-0" class="header-anchor">#</a> Upgrading from v9.1.0 to v9.2.0
+                </h3>
+                <h4 id="for-technical-users9-2-0">
+                    <a href="#for-technical-users9-2-0" class="header-anchor">#</a> For Technical Users:
+                </h4>
+                <ul>
+                    <li>Download <code>v9.2.0</code></li>
+                    <li>Backup you current version files and DB</li>
+                    <li>If you have manually changed any files then please take a backup of them. After replacing files,
+                        you can again get that portion of code into some particular files.
+                    </li>
+                    <li>Replace <code>v9.2.0</code> files into your existing version <code>v9.1.0</code></li>
+                    <li>Run <code>php artisan migrate</code> to run migrations</li>
+                    <li>Run <code>php artisan db:seed --class="FrontSettingHomeTableSeeder"</code></li>
+                    <li>Run <code>php artisan db:seed --class="FrontServiceSeeder"</code></li>
+                    <li>Run <code>php artisan db:seed --class="AddDoctorFrontSettingTableSeeder"</code></li>
+                    <li>Run <code>php artisan db:seed --class="AddSocialSettingTableSeeder"</code></li>
+                    <li>Run <code>php artisan db:seed --class="AddHomePageBoxContentSeeder"</code></li>
+                    <li>Run <code>php artisan db:seed --class="AddAppointmentFrontSettingTableSeeder"</code></li>
+                    <li>And at last Run <code>npm run dev</code> to make new build</li>
+                    <li>That's it!, you are ready to go with new version <code>v9.2.0</code></li>
+                </ul>
+                <h4 id="for-non-technical-users9-2-0">
+                    <a href="#for-non-technical-users9-2-0" class="header-anchor">#</a> For Non Technical Users:
+                </h4>
+                <ul>
+                    <li>Download <code>v9.2.0</code></li>
+                    <li>Backup you current version files and DB</li>
+                    <li>If you have manually changed any files then please take a backup of them. After replacing files,
+                        you can again get that portion of code into some particular files.
+                    </li>
+                    <li>Replace <code>v9.2.0</code> files/directories into your existing version <code>v9.1.0</code>
+                    </li>
+                    <li>Update database :
+                        <ul>
+                            <li>Open your <code>phpMyAdmin</code></li>
+                            <li>Go to your database and select import tab.</li>
+                            <li>Now in the latest version go to <code>app/database/releases/v9.2.0/</code> you can find
+                                <code>v9.2.0.sql</code></li>
+                            <li>Select that sql file and import it.</li>
+                        </ul>
+                    </li>
+                    <li>Now please call this url once <code>YOUR_APP_URL/upgrade-to-v9-2-0</code></li>
+                    <li>That's it!, you are ready to go with new version <code>v9.2.0</code></li>
+                </ul>
+                <!-----v9.2.0 section end-------------->
+                
+                <!-----v9.1.0 section start----------->
+                <h3 id="upgrading-from-v9-0-1-to-v9-1-0">
+                    <a href="#upgrading-from-v9-0-1-to-v9-1-0" class="header-anchor">#</a> Upgrading from v9.0.1 to v9.1.0
+                </h3>
+                <h4 id="for-technical-users9-1-0">
+                    <a href="#for-technical-users9-1-0" class="header-anchor">#</a> For Technical Users:
+                </h4>
+                <ul>
+                    <li>Download <code>v9.1.0</code></li>
+                    <li>Backup you current version files and DB</li>
+                    <li>If you have manually changed any files then please take a backup of them. After replacing files,
+                        you can again get that portion of code into some particular files.
+                    </li>
+                    <li>Replace <code>v9.1.0</code> files into your existing version <code>v9.0.1</code></li>
+                    <li>And at last Run <code>npm run dev</code> to make new build</li>
+                    <li>That's it!, you are ready to go with new version <code>v9.1.0</code></li>
+                </ul>
+                <h4 id="for-non-technical-users9-1-0">
+                    <a href="#for-non-technical-users9-1-0" class="header-anchor">#</a> For Non Technical Users:
+                </h4>
+                <ul>
+                    <li>Download <code>v9.1.0</code></li>
+                    <li>Backup you current version files and DB</li>
+                    <li>If you have manually changed any files then please take a backup of them. After replacing files,
+                        you can again get that portion of code into some particular files.
+                    </li>
+                    <li>Replace <code>v9.1.0</code> files/directories into your existing version <code>v9.0.1</code>
+                    </li>
+                    <li>That's it!, you are ready to go with new version <code>v9.1.0</code></li>
+                </ul>
+                <!-----v9.1.0 section end-------------->
+                
+                <!-----v9-0-1 section start----------->
+                <h3 id="upgrading-from-v9-0-0-to-v9-0-1">
+                    <a href="#upgrading-from-v9-0-0-to-v9-0-1" class="header-anchor">#</a> Upgrading from v9.0.0 to v9.0.1
+                </h3>
+                <h4 id="for-technical-users9-0-1">
+                    <a href="#for-technical-users9-0-1" class="header-anchor">#</a> For Technical / Non-Technical Users:
+                </h4>
+                <ul>
+                    <li>Download <code>v9.0.1</code></li>
+                    <li>Backup you current version files and DB</li>
+                    <li>If you have manually changed any files then please take a backup of them. After replacing files,
+                        you can again get that portion of code into some particular files.
+                    </li>
+                    <li>Replace <code>v9.0.1</code> files into your existing version <code>v9.0.0</code></li>
+                    <li>That's it!, you are ready to go with new version <code>v9.0.1</code></li>
+                </ul>
+                
+                <!-----v9-0-0 section start----------->
+                <h3 id="upgrading-from-v8-1-0-to-v9-0-0">
+                    <a href="#upgrading-from-v8-1-0-to-v9-0-0" class="header-anchor">#</a> Upgrading from v8.1.0 to v9.0.0
+                </h3>
+                <h4 id="for-technical-users9-0-0">
+                    <a href="#for-technical-users9-0-0" class="header-anchor">#</a> For Technical / Non-Technical Users:
+                </h4>
+                <ul>
+                    <li>Download <code>v9.0.0</code></li>
+                    <li>Backup you current version files and DB</li>
+                    <li>If you have manually changed any files then please take a backup of them. After replacing files,
+                        you can again get that portion of code into some particular files.
+                    </li>
+                    <li>Replace <code>v9.0.0</code> files into your existing version <code>v8.1.0</code></li>
+                    <li>That's it!, you are ready to go with new version <code>v8.1.0</code></li>
+                </ul>
+                
+                <!-----v8.1.0 section start----------->
+                <h3 id="upgrading-from-v8-0-0-to-v8-1-0">
+                    <a href="#upgrading-from-v8-0-0-to-v8-1-0" class="header-anchor">#</a> Upgrading from v8.0.0 to v8.1.0
+                </h3>
+                <h4 id="for-technical-users8-1-0">
+                    <a href="#for-technical-users8-1-0" class="header-anchor">#</a> For Technical Users:
+                </h4>
+                <ul>
+                    <li>Download <code>v8.1.0</code></li>
+                    <li>Backup you current version files and DB</li>
+                    <li>If you have manually changed any files then please take a backup of them. After replacing files,
+                        you can again get that portion of code into some particular files.
+                    </li>
+                    <li>Replace <code>v8.1.0</code> files into your existing version <code>v8.0.0</code></li>
+                    <li>Run <code>composer install</code> to update composer dependencies</li>
+                    <li>Run <code>php artisan migrate</code> to run migrations</li>
+                    <li>Run <code>npm install</code></li>
+                    <li>And at last Run <code>npm run dev</code> to make new build</li>
+                    <li>That's it!, you are ready to go with new version <code>v8.1.0</code></li>
+                </ul>
+                <h4 id="for-non-technical-users8-1-0">
+                    <a href="#for-non-technical-users8-1-0" class="header-anchor">#</a> For Non Technical Users:
+                </h4>
+                <ul>
+                    <li>Download <code>v8.1.0</code></li>
+                    <li>Backup you current version files and DB</li>
+                    <li>If you have manually changed any files then please take a backup of them. After replacing files,
+                        you can again get that portion of code into some particular files.
+                    </li>
+                    <li>Replace <code>v8.1.0</code> files/directories into your existing version <code>v8.0.0</code>
+                    </li>
+                    <li>Now please call this url once <code>YOUR_APP_URL/upgrade-to-v8-1-0</code></li>
+                    <li>That's it!, you are ready to go with new version <code>v8.1.0</code></li>
+                </ul>
+                <!-----v8.1.0 section end-------------->
+
+                <!-----v8.0.0 section start----------->
+                <h3 id="upgrading-from-v7-0-0-to-v8-0-0">
+                    <a href="#upgrading-from-v7-0-0-to-v8-0-0" class="header-anchor">#</a> Upgrading from v7.0.0 to v8.0.0
+                </h3>
+                <h4 id="for-technical-users8-0-0">
+                    <a href="#for-technical-users8-0-0" class="header-anchor">#</a> For Technical Users:
+                </h4>
+                <ul>
+                    <li>Download <code>v8.0.0</code></li>
+                    <li>Backup you current version files and DB</li>
+                    <li>If you have manually changed any files then please take a backup of them. After replacing files,
+                        you can again get that portion of code into some particular files.
+                    </li>
+                    <li>Replace <code>v8.0.0</code> files into your existing version <code>v7.0.0</code></li>
+                    <li>Run <code>composer install</code> to update composer dependencies</li>
+                    <li>Run <code>php artisan migrate</code> to run migrations</li>
+                    <li>Run <code>npm install</code></li>
+                    <li>And at last Run <code>npm run dev</code> to make new build</li>
+                    <li>That's it!, you are ready to go with new version <code>v8.0.0</code></li>
+                </ul>
+                <h4 id="for-non-technical-users8-0-0">
+                    <a href="#for-non-technical-users8-0-0" class="header-anchor">#</a> For Non Technical Users:
+                </h4>
+                <ul>
+                    <li>Download <code>v8.0.0</code></li>
+                    <li>Backup you current version files and DB</li>
+                    <li>If you have manually changed any files then please take a backup of them. After replacing files,
+                        you can again get that portion of code into some particular files.
+                    </li>
+                    <li>Replace <code>v8.0.0</code> files/directories into your existing version <code>v7.0.0</code>
+                    </li>
+                    <li>Update database :
+                        <ul>
+                            <li>Open your <code>phpMyAdmin</code></li>
+                            <li>Go to your database and select import tab.</li>
+                            <li>Now in the latest version go to <code>app/database/releases/v8.0.0/</code> you can find
+                                <code>v8.0.0.sql</code></li>
+                            <li>Select that sql file and import it.</li>
+                        </ul>
+                    </li>
+                    <li>Now please call this url once <code>YOUR_APP_URL/upgrade-to-v8-0-0</code></li>
+                    <li>That's it!, you are ready to go with new version <code>v8.0.0</code></li>
+                </ul>
+                <!-----v8.0.0 section end-------------->
+                
+                <!-----Users section start----------->
+                <h3 id="upgrading-from-v6-0-0-to-v7-0-0">
+                    <a href="#upgrading-from-v6-0-0-to-v7-0-0" class="header-anchor">#</a> Upgrading from v6.0.0 to v7.0.0
+                </h3>
+                <h4 id="for-technical-users7-0-0">
+                    <a href="#for-technical-users7-0-0" class="header-anchor">#</a> For Technical Users:
+                </h4>
+                <ul>
+                    <li>Download <code>v7.0.0</code></li>
+                    <li>Backup you current version files and DB</li>
+                    <li>If you have manually changed any files then please take a backup of them. After replacing files,
+                        you can again get that portion of code into some particular files.
+                    </li>
+                    <li>Replace <code>v7.0.0</code> files into your existing version <code>v6.0.0</code></li>
+                    <li>You have to update your <code>.env</code> by the following key. <div class="language- extra-class"><pre><code>  COOKIE_CONSENT_ENABLED=
+</code></pre></div></li>
+                    <li>Run <code>composer install</code> to update composer dependencies</li>
+                    <li>Run <code>php artisan migrate</code> to run migrations</li>
+                    <li>Run <code>php artisan db:seed --class="FrontSettingTableSeeder"</code></li>
+                    <li>Run <code>npm install</code></li>
+                    <li>And at last Run <code>npm run dev</code> to make new build</li>
+                    <li>That's it!, you are ready to go with new version <code>v7.0.0</code></li>
+                </ul>
+                <h4 id="for-non-technical-users7-0-0">
+                    <a href="#for-non-technical-users7-0-0" class="header-anchor">#</a> For Non Technical Users:
+                </h4>
+                <ul>
+                    <li>Download <code>v7.0.0</code></li>
+                    <li>Backup you current version files and DB</li>
+                    <li>If you have manually changed any files then please take a backup of them. After replacing files,
+                        you can again get that portion of code into some particular files.
+                    </li>
+                    <li>Replace <code>v7.0.0</code> files/directories into your existing version <code>v6.0.0</code>
+                    </li>
+                    <li>Update database :
+                        <ul>
+                            <li>Open your <code>phpMyAdmin</code></li>
+                            <li>Go to your database and select import tab.</li>
+                            <li>Now in the latest version go to <code>app/database/releases/v7.0.0/</code> you can find
+                                <code>v7.0.0.sql</code></li>
+                            <li>Select that sql file and import it.</li>
+                        </ul>
+                    </li>
+                    <li>Now please call this url once <code>YOUR_APP_URL/upgrade-to-v7-0-0</code></li>
+                    <li>You have to update your <code>.env</code> by the following key. <div class="language- extra-class"><pre><code>  COOKIE_CONSENT_ENABLED=
+</code></pre></div></li>
+                    <li>That's it!, you are ready to go with new version <code>v7.0.0</code></li>
+                </ul>
+                <!-----Users section end-------------->
+
+                <h3 id="upgrading-from-v5-0-0-to-v6-0-0">
+                    <a href="#upgrading-from-v5-0-0-to-v6-0-0" class="header-anchor">#</a> Upgrading from v5.0.0 to v6.0.0
+                </h3>
+                <h4 id="for-technical-users6-0-0">
+                    <a href="#for-technical-users6-0-0" class="header-anchor">#</a> For Technical Users:
+                </h4>
+                <ul>
+                    <li>Download <code>v6.0.0</code></li>
+                    <li>Backup you current version files and DB</li>
+                    <li>If you have manually changed any files then please take a backup of them. After replacing files,
+                        you can again get that portion of code into some particular files.
+                    </li>
+                    <li>Replace <code>v6.0.0</code> files into your existing version <code>v5.1.0</code></li>
+                    <li>Run <code>composer install</code> to update composer dependencies</li>
+                    <li>Run <code>php artisan db:seed --class="AddVaccinationModuleTableSeeder"</code> to update composer dependencies</li>
+                    <li>Run <code>npm install</code></li>
+                    <li>And at last Run <code>npm run dev</code> to make new build</li>
+                    <li>That's it!, you are ready to go with new version <code>v6.0.0</code></li>
+                </ul>
+                <h4 id="for-non-technical-users6-0-0">
+                    <a href="#for-non-technical-users5-0-0" class="header-anchor">#</a> For Non Technical Users:
+                </h4>
+                <ul>
+                    <li>Download <code>v6.0.0</code></li>
+                    <li>Backup you current version files and DB</li>
+                    <li>If you have manually changed any files then please take a backup of them. After replacing files,
+                        you can again get that portion of code into some particular files.
+                    </li>
+                    <li>Replace <code>v6.0.0</code> files/directories into your existing version <code>v5.1.0</code>
+                    </li>
+                    <li>Update database :
+                        <ul>
+                            <li>Open your <code>phpMyAdmin</code></li>
+                            <li>Go to your database and select import tab.</li>
+                            <li>Now in the latest version go to <code>app/database/releases/v6.0.0/</code> you can find
+                                <code>v6.0.0.sql</code></li>
+                            <li>Select that sql file and import it.</li>
+                        </ul>
+                    </li>
+                    <li>That's it!, you are ready to go with new version <code>v6.0.0</code></li>
+                </ul>
+                
+                <!-- Live Consultations section starts -->
+                    <h3 id="upgrading-from-v4-0-1-to-v5-0-0">
+                        <a href="#upgrading-from-v4-0-1-to-v5-0-0" class="header-anchor">#</a> Upgrading from v4.0.1 to v5.0.0
+                    </h3> 
+                    <h4 id="for-technical-users5-0-0">
+                        <a href="#for-technical-users5-0-0" class="header-anchor">#</a> For Technical Users:
+                    </h4>
+                    <ul>
+                        <li>Download <code>v5.0.0</code></li>
+                        <li>Backup you current version files and DB</li>
+                        <li>If you have manually changed any files then please take a backup of them. After replacing files,
+                            you can again get that portion of code into some particular files.
+                        </li>
+                        <li>Replace <code>v5.0.0</code> files into your existing version <code>v4.0.1</code></li>
+                        <li>Run <code>composer install</code> to update composer dependencies</li>
+                        <li>Run <code>npm install</code></li>
+                        <li>And at last Run <code>npm run dev</code> to make new build</li>
+                        <li>That's it!, you are ready to go with new version <code>v5.0.0</code></li>
+                    </ul>
+                    <h4 id="for-non-technical-users5-0-0">
+                        <a href="#for-non-technical-users5-0-0" class="header-anchor">#</a> For Non Technical Users:
+                    </h4>
+                    <ul>
+                        <li>Download <code>v5.0.0</code></li>
+                        <li>Backup you current version files and DB</li>
+                        <li>If you have manually changed any files then please take a backup of them. After replacing files,
+                            you can again get that portion of code into some particular files.
+                        </li>
+                        <li>Replace <code>v5.0.0</code> files/directories into your existing version <code>v4.0.1</code>
+                        </li>
+                        <li>Update database :
+                            <ul>
+                                <li>Open your <code>phpMyAdmin</code></li>
+                                <li>Go to your database and select import tab.</li>
+                                <li>Now in the latest version go to <code>app/database/releases/v5.0.0/</code> you can find
+                                    <code>v5.0.0.sql</code></li>
+                                <li>Select that sql file and import it.</li>
+                            </ul>
+                        </li>
+                        <li>That's it!, you are ready to go with new version <code>v5.0.0</code></li>
+                    </ul>
+                <!-- Live Consultations section ends -->
+
+                <h3 id="upgrading-from-v4-0-0-to-v4-0-1"><a href="#upgrading-from-v4-0-0-to-v4-0-1"
+                                                            class="header-anchor">#</a> Upgrading from v4-0-0 to v4.0.1
+                </h3> <h4 id="for-technical-users4-0-1"><a href="#for-technical-users4-0-1" class="header-anchor">#</a> For
+                    Technical Users:</h4>
+                <ul>
+                    <li>Download <code>v4.0.1</code></li>
+                    <li>Backup you current version files and DB</li>
+                    <li>If you have manually changed any files then please take a backup of them. After replacing files,
+                        you can again get that portion of code into some particular files.
+                    </li>
+                    <li>Replace <code>v4.0.1</code> files into your existing version <code>v4.0.0</code></li>
+                    <li>Run <code>composer install</code> to update composer dependencies</li>
+                    <li>Run <code>npm install</code></li>
+                    <li>And at last Run <code>npm run dev</code> to make new build</li>
+                    <li>That's it!, you are ready to go with new version <code>v4.0.1</code></li>
+                </ul>
+                <h4 id="for-non-technical-users4-0-1"><a href="#for-non-technical-users4-0-1" class="header-anchor">#</a> For Non
+                    Technical Users:</h4>
+                <ul>
+                    <li>Download <code>v4.0.1</code></li>
+                    <li>Backup you current version files and DB</li>
+                    <li>If you have manually changed any files then please take a backup of them. After replacing files,
+                        you can again get that portion of code into some particular files.
+                    </li>
+                    <li>Replace <code>v4.0.1</code> files/directories into your existing version <code>v4.0.0</code>
+                    </li>
+                    <li>That's it!, you are ready to go with new version <code>v4.0.1</code></li>
+                </ul>
+                
+                <h3 id="upgrading-from-v3-4-1-to-v4-0-0"><a href="#upgrading-from-v3-4-1-to-v4-0-0"
+                                                            class="header-anchor">#</a> Upgrading from v3.4.1 to v4.0.0
+                </h3> <h4 id="for-technical-users4-0-0"><a href="#for-technical-users4-0-0" class="header-anchor">#</a> For
+                    Technical Users:</h4>
+                <ul>
+                    <li>Download <code>v4.0.0</code></li>
+                    <li>Backup you current version files and DB</li>
+                    <li>If you have manually changed any files then please take a backup of them. After replacing files,
+                        you can again get that portion of code into some particular files.
+                    </li>
+                    <li>Replace <code>v4.0.0</code> files into your existing version <code>v3.4.1</code></li>
+                    <li>Run <code>php artisan migrate</code> to run migrations</li>
+                    <li>Run <code>npm install</code></li>
+                    <li>And at last Run <code>npm run dev</code> to make new build</li>
+                    <li>That's it!, you are ready to go with new version <code>v4.0.0</code></li>
+                </ul>
+                <h4 id="for-non-technical-users4-0-0"><a href="#for-non-technical-users4-0-0" class="header-anchor">#</a> For Non
+                    Technical Users:</h4>
+                <ul>
+                    <li>Download <code>v4.0.0</code></li>
+                    <li>Backup you current version files and DB</li>
+                    <li>If you have manually changed any files then please take a backup of them. After replacing files,
+                        you can again get that portion of code into some particular files.
+                    </li>
+                    <li>Replace <code>v4.0.0</code> files/directories into your existing version <code>v3.4.1</code>
+                    </li>
+                    <li>Update database :
+                        <ul>
+                            <li>Open your <code>phpMyAdmin</code></li>
+                            <li>Go to your database and select import tab.</li>
+                            <li>Now in the latest version go to <code>app/database/releases/v4.0.0/</code> you can find
+                                <code>v4.0.0.sql</code></li>
+                            <li>Select that sql file and import it.</li>
+                        </ul>
+                    </li>
+                    <li>That's it!, you are ready to go with new version <code>v4.0.0</code></li>
+                </ul>
+                
+                
+                <h3 id="upgrading-from-v3-4-0-to-v3-4-1"><a href="#upgrading-from-v3-4-0-to-v3-4-1"
+                                                            class="header-anchor">#</a> Upgrading from v3.4.0 to v3.4.1
+                </h3> <h4 id="for-technical-users3-4-1"><a href="#for-technical-users3-4-1" class="header-anchor">#</a> For
+                    Technical Users:</h4>
+                <ul>
+                    <li>Download <code>v3.4.1</code></li>
+                    <li>Backup you current version files and DB</li>
+                    <li>If you have manually changed any files then please take a backup of them. After replacing files,
+                        you can again get that portion of code into some particular files.
+                    </li>
+                    <li>Replace <code>v3.4.1</code> files into your existing version <code>v3.4.0</code></li>
+                    <li>That's it!, you are ready to go with new version <code>v3.4.1</code></li>
+                </ul>
+                <h4 id="for-non-technical-users3-4-1"><a href="#for-non-technical-users3-4-1" class="header-anchor">#</a> For Non
+                    Technical Users:</h4>
+                <ul>
+                    <li>Download <code>v3.4.1</code></li>
+                    <li>Backup you current version files and DB</li>
+                    <li>If you have manually changed any files then please take a backup of them. After replacing files,
+                        you can again get that portion of code into some particular files.
+                    </li>
+                    <li>Replace <code>v3.4.1</code> files/directories into your existing version <code>v3.4.0</code>
+                    </li>
+                    <li>That's it!, you are ready to go with new version <code>v3.4.1</code></li>
+                </ul>
+                <h3 id="upgrading-from-v3-3-0-to-v3-4-0"><a href="#upgrading-from-v3-3-0-to-v3-4-0"
+                                                            class="header-anchor">#</a> Upgrading from v3.3.0 to v3.4.0
+                </h3> <h4 id="for-technical-users3-4-0"><a href="#for-technical-users3-4-0" class="header-anchor">#</a> For
+                    Technical Users:</h4>
+                <ul>
+                    <li>Download <code>v3.4.0</code></li>
+                    <li>Backup you current version files and DB</li>
+                    <li>If you have manually changed any files then please take a backup of them. After replacing files,
+                        you can again get that portion of code into some particular files.
+                    </li>
+                    <li>Replace <code>v3.4.0</code> files into your existing version <code>v3.3.0</code></li>
+                    <li>Run <code>composer install</code> to update composer dependencies</li>
+                    <li>Run <code>php artisan migrate</code> to run migrations</li>
+                    <li>Run <code>php artisan db:seed --class=DefaultModuleSeeder</code></li>
+                    <li>Run <code>npm install</code></li>
+                    <li>And at last Run <code>npm run dev</code> to make new build</li>
+                    <li>That's it!, you are ready to go with new version <code>v3.4.0</code></li>
+                </ul>
+                <h4 id="for-non-technical-users3-4-0"><a href="#for-non-technical-users3-4-0" class="header-anchor">#</a> For Non
+                    Technical Users:</h4>
+                <ul>
+                    <li>Download <code>v3.4.0</code></li>
+                    <li>Backup you current version files and DB</li>
+                    <li>If you have manually changed any files then please take a backup of them. After replacing files,
+                        you can again get that portion of code into some particular files.
+                    </li>
+                    <li>Replace <code>v3.4.0</code> files/directories into your existing version <code>v3.3.0</code>
+                    </li>
+                    <li>Update database :
+                        <ul>
+                            <li>Open your <code>phpMyAdmin</code></li>
+                            <li>Go to your database and select import tab.</li>
+                            <li>Now in the latest version go to <code>app/database/releases/v3.4.0/</code> you can find
+                                <code>v3.4.0.sql</code></li>
+                            <li>Select that sql file and import it.</li>
+                        </ul>
+                    </li>
+                    <li>That's it!, you are ready to go with new version <code>v3.4.0</code></li>
+                </ul>
+                <h3 id="upgrading-from-v3-2-0-to-v3-3-0"><a href="#upgrading-from-v3-2-0-to-v3-3-0"
+                                                            class="header-anchor">#</a> Upgrading from v3.2.0 to v3.3.0
+                </h3> <h4 id="for-technical-users"><a href="#for-technical-users" class="header-anchor">#</a> For
+                    Technical Users:</h4>
+                <ul>
+                    <li>Download <code>v3.3.0</code></li>
+                    <li>Backup you current version files and DB</li>
+                    <li>If you have manually changed any files then please take a backup of them. After replacing files,
+                        you can again get that portion of code into some particular files.
+                    </li>
+                    <li>Replace <code>v3.3.0</code> files into your existing version <code>v3.2.0</code></li>
+                    <li>Run <code>composer install</code> to update composer dependencies</li>
+                    <li>Run <code>php artisan migrate</code> to run migrations</li>
+                    <li>Run <code>php artisan db:seed --class=DefaultModuleSeeder</code></li>
+                    <li>Run <code>npm install</code></li>
+                    <li>And at last Run <code>npm run dev</code> to make new build</li>
+                    <li>That's it!, you are ready to go with new version <code>v3.3.0</code></li>
+                </ul>
+                <h4 id="for-non-technical-users"><a href="#for-non-technical-users" class="header-anchor">#</a> For Non
+                    Technical Users:</h4>
+                <ul>
+                    <li>Download <code>v3.3.0</code></li>
+                    <li>Backup you current version files and DB</li>
+                    <li>If you have manually changed any files then please take a backup of them. After replacing files,
+                        you can again get that portion of code into some particular files.
+                    </li>
+                    <li>Replace <code>v3.3.0</code> files/directories into your existing version <code>v3.2.0</code>
+                    </li>
+                    <li>Update database :
+                        <ul>
+                            <li>Open your <code>phpMyAdmin</code></li>
+                            <li>Go to your database and select import tab.</li>
+                            <li>Now in the latest version go to <code>app/database/releases/v3.3.0/</code> you can find
+                                <code>v3.3.0.sql</code></li>
+                            <li>Select that sql file and import it.</li>
+                        </ul>
+                    </li>
+                    <li>That's it!, you are ready to go with new version <code>v3.3.0</code></li>
+                </ul>
+                <h3 id="upgrading-from-v3-1-0-to-v3-2-0"><a href="#upgrading-from-v3-1-0-to-v3-2-0"
+                                                            class="header-anchor">#</a> Upgrading from v3.1.0 to v3.2.0
+                </h3> <h4 id="for-technical-users-2"><a href="#for-technical-users-2" class="header-anchor">#</a> For
+                    Technical Users:</h4>
+                <ul>
+                    <li>Download <code>v3.2.0</code></li>
+                    <li>Backup you current version files and DB</li>
+                    <li>If you have manually changed any files then please take a backup of them. After replacing files,
+                        you can again get that portion of code into some particular files.
+                    </li>
+                    <li>Replace <code>v3.2.0</code> files into your existing version <code>v3.1.0</code></li>
+                    <li>Run <code>composer install</code> to update composer dependencies</li>
+                    <li>Run <code>php artisan migrate</code> to run migrations</li>
+                    <li>Run <code>npm install</code></li>
+                    <li>And at last Run <code>npm run dev</code> to make new build</li>
+                    <li>That's it!, you are ready to go with new version <code>v3.2.0</code></li>
+                </ul>
+                <h4 id="for-non-technical-users-2"><a href="#for-non-technical-users-2" class="header-anchor">#</a> For
+                    Non Technical Users:</h4>
+                <ul>
+                    <li>Download <code>v3.2.0</code></li>
+                    <li>Backup you current version files and DB</li>
+                    <li>If you have manually changed any files then please take a backup of them. After replacing files,
+                        you can again get that portion of code into some particular files.
+                    </li>
+                    <li>Replace <code>v3.2.0</code> files/directories into your existing version <code>v3.1.0</code>
+                    </li>
+                    <li>Update database :
+                        <ul>
+                            <li>Open your <code>phpMyAdmin</code></li>
+                            <li>Go to your database and select import tab.</li>
+                            <li>Now in latest version go to <code>app/database/releases/v3.2.0/</code> you can find
+                                <code>v3.2.0.sql</code></li>
+                            <li>Select that sql file and import it.</li>
+                        </ul>
+                    </li>
+                    <li>That's it!, you are ready to go with new version <code>v3.2.0</code></li>
+                </ul>
+                <h3 id="upgrading-from-v3-0-0-to-v3-1-0"><a href="#upgrading-from-v3-0-0-to-v3-1-0"
+                                                            class="header-anchor">#</a> Upgrading from v3.0.0 to v3.1.0
+                </h3> <h4 id="for-technical-users-3"><a href="#for-technical-users-3" class="header-anchor">#</a> For
+                    Technical Users:</h4>
+                <ul>
+                    <li>Download <code>v3.1.0</code></li>
+                    <li>Backup you current version files and DB</li>
+                    <li>If you have manually changed any files then please take a backup of them. After replacing files,
+                        you can again get that portion of code into some particular files.
+                    </li>
+                    <li>Replace <code>v3.1.0</code> files into your existing version <code>v3.0.0</code></li>
+                    <li>Run <code>composer install</code> to update composer dependencies</li>
+                    <li>Run <code>php artisan migrate</code> to run migrations</li>
+                    <li>Run <code>npm install</code></li>
+                    <li>And at last Run <code>npm run dev</code> to make new build</li>
+                    <li>That's it!, you are ready to go with new version <code>v3.1.0</code></li>
+                </ul>
+                <h4 id="for-non-technical-users-3"><a href="#for-non-technical-users-3" class="header-anchor">#</a> For
+                    Non Technical Users:</h4>
+                <ul>
+                    <li>Download <code>v3.01.0</code></li>
+                    <li>Backup you current version files and DB</li>
+                    <li>If you have manually changed any files then please take a backup of them. After replacing files,
+                        you can again get that portion of code into some particular files.
+                    </li>
+                    <li>Replace <code>v3.1.0</code> files/directories into your existing version <code>v3.0.0</code>
+                    </li>
+                    <li>Update database :
+                        <ul>
+                            <li>Open your <code>phpMyAdmin</code></li>
+                            <li>Go to your database and select import tab.</li>
+                            <li>Now in latest version go to <code>app/database/releases/v3.1.0/</code> you can find
+                                <code>v3.1.0.sql</code></li>
+                            <li>Select that sql file and import it.</li>
+                        </ul>
+                    </li>
+                    <li>That's it!, you are ready to go with new version <code>v3.1.0</code></li>
+                </ul>
+                <h3 id="upgrading-from-v2-0-0-to-v3-0-0"><a href="#upgrading-from-v2-0-0-to-v3-0-0"
+                                                            class="header-anchor">#</a> Upgrading from v2.0.0 to v3.0.0
+                </h3> <h4 id="for-technical-users-4"><a href="#for-technical-users-4" class="header-anchor">#</a> For
+                    Technical Users:</h4>
+                <ul>
+                    <li>Download <code>v3.0.0</code></li>
+                    <li>Backup you current version files and DB</li>
+                    <li>If you have manually changed any files then please take a backup of them. After replacing files,
+                        you can again get that portion of code into some particular files.
+                    </li>
+                    <li>Replace <code>v3.0.0</code> files into your existing version <code>v2.0.0</code></li>
+                    <li>Run <code>composer install</code> to update composer dependencies</li>
+                    <li>Run <code>php artisan migrate</code> to run migrations</li>
+                    <li>Run <code>npm install</code></li>
+                    <li>And at last Run <code>npm run dev</code> to make new build</li>
+                    <li>That's it!, you are ready to go with new version <code>v3.0.0</code></li>
+                </ul>
+                <h4 id="for-non-technical-users-4"><a href="#for-non-technical-users-4" class="header-anchor">#</a> For
+                    Non Technical Users:</h4>
+                <ul>
+                    <li>Download <code>v3.0.0</code></li>
+                    <li>Backup you current version files and DB</li>
+                    <li>If you have manually changed any files then please take a backup of them. After replacing files,
+                        you can again get that portion of code into some particular files.
+                    </li>
+                    <li>Replace <code>v3.0.0</code> files/directories into your existing version <code>v2.0.0</code>
+                    </li>
+                    <li>Update database :
+                        <ul>
+                            <li>Open your <code>phpMyAdmin</code></li>
+                            <li>Go to your database and select import tab.</li>
+                            <li>Now in latest version go to <code>app/database/releases/v3.0.0/</code> you can find
+                                <code>v3.0.0.sql</code></li>
+                            <li>Select that sql file and import it.</li>
+                        </ul>
+                    </li>
+                    <li>That's it!, you are ready to go with new version <code>v3.0.0</code></li>
+                </ul>
+                <h3 id="upgrading-from-v1-6-0-to-v2-0-0"><a href="#upgrading-from-v1-6-0-to-v2-0-0"
+                                                            class="header-anchor">#</a> Upgrading from v1.6.0 to v2.0.0
+                </h3> <h4 id="for-technical-users-5"><a href="#for-technical-users-5" class="header-anchor">#</a> For
+                    Technical Users:</h4>
+                <ul>
+                    <li>Download <code>v2.0.0</code></li>
+                    <li>Backup you current version files and DB</li>
+                    <li>If you have manually changed any files then please take a backup of them. After replacing files,
+                        you can again get that portion of code into some particular files.
+                    </li>
+                    <li>Replace <code>v2.0.0</code> files into your existing version <code>v1.6.0</code></li>
+                    <li>Run <code>composer install</code> to update composer dependencies</li>
+                    <li>Run <code>php artisan migrate</code> to run migrations</li>
+                    <li>Run <code>npm install</code></li>
+                    <li>And at last Run <code>npm run dev</code> to make new build</li>
+                    <li>That's it!, you are ready to go with new version <code>v2.0.0</code></li>
+                </ul>
+                <h4 id="for-non-technical-users-5"><a href="#for-non-technical-users-5" class="header-anchor">#</a> For
+                    Non Technical Users:</h4>
+                <ul>
+                    <li>Download <code>v2.0.0</code></li>
+                    <li>Backup you current version files and DB</li>
+                    <li>If you have manually changed any files then please take a backup of them. After replacing files,
+                        you can again get that portion of code into some particular files.
+                    </li>
+                    <li>Replace <code>v2.0.0</code> files/directories into your existing version <code>v1.6.0</code>
+                    </li>
+                    <li>Update database :
+                        <ul>
+                            <li>Open your <code>phpMyAdmin</code></li>
+                            <li>Go to your database and select import tab.</li>
+                            <li>Now in latest version go to <code>app/database/releases/v2.0.0/</code> you can find
+                                <code>v2.0.0.sql</code></li>
+                            <li>Select that sql file and import it.</li>
+                        </ul>
+                    </li>
+                    <li>That's it!, you are ready to go with new version <code>v2.0.0</code></li>
+                </ul>
+                <h3 id="upgrading-from-v1-5-1-to-v1-6-0"><a href="#upgrading-from-v1-5-1-to-v1-6-0"
+                                                            class="header-anchor">#</a> Upgrading from v1.5.1 to v1.6.0
+                </h3> <h4 id="for-technical-users-6"><a href="#for-technical-users-6" class="header-anchor">#</a> For
+                    Technical Users:</h4>
+                <ul>
+                    <li>Download <code>v1.6.0</code></li>
+                    <li>Backup you current version files and DB</li>
+                    <li>If you have manually changed any files then please take a backup of them. After replacing files,
+                        you can again get that portion of code into some particular files.
+                    </li>
+                    <li>Replace <code>v1.6.0</code> files into your existing version <code>v1.5.1</code></li>
+                    <li>Run <code>composer install</code> to update composer dependencies</li>
+                    <li>Run <code>npm install</code></li>
+                    <li>And at last Run <code>npm run dev</code> to make new build</li>
+                    <li>That's it!, you are ready to go with new version <code>v1.6.0</code></li>
+                </ul>
+                <h4 id="for-non-technical-users-6"><a href="#for-non-technical-users-6" class="header-anchor">#</a> For
+                    Non Technical Users:</h4>
+                <ul>
+                    <li>Download <code>v1.6.0</code></li>
+                    <li>Backup you current version files and DB</li>
+                    <li>If you have manually changed any files then please take a backup of them. After replacing files,
+                        you can again get that portion of code into some particular files.
+                    </li>
+                    <li>Replace <code>v1.6.0</code> files/directories into your existing version <code>v1.5.1</code>
+                    </li>
+                    <li>That's it!, you are ready to go with new version <code>v1.6.0</code></li>
+                </ul>
+                <h3 id="upgrading-from-v1-5-0-to-v1-5-1"><a href="#upgrading-from-v1-5-0-to-v1-5-1"
+                                                            class="header-anchor">#</a> Upgrading from v1.5.0 to v1.5.1
+                </h3> <h4 id="for-technical-users-7"><a href="#for-technical-users-7" class="header-anchor">#</a> For
+                    Technical Users:</h4>
+                <ul>
+                    <li>Download <code>v1.5.1</code></li>
+                    <li>Backup you current version files and DB</li>
+                    <li>If you have manually changed any files then please take a backup of them. After replacing files,
+                        you can again get that portion of code into some particular files.
+                    </li>
+                    <li>Replace <code>v1.5.1</code> files into your existing version <code>v1.5.0</code></li>
+                    <li>Run <code>php artisan migrate</code></li>
+                    <li>Run <code>composer install</code> to update composer dependencies</li>
+                    <li>And at last Run <code>npm run dev</code> to make new build</li>
+                    <li>That's it!, you are ready to go with new version <code>v1.5.1</code></li>
+                </ul>
+                <h4 id="for-non-technical-users-7"><a href="#for-non-technical-users-7" class="header-anchor">#</a> For
+                    Non Technical Users:</h4>
+                <ul>
+                    <li>Download `v1.5.1</li>
+                    <li>Backup you current version files and DB</li>
+                    <li>If you have manually changed any files then please take a backup of them. After replacing files,
+                        you can again get that portion of code into some particular files.
+                    </li>
+                    <li>Replace <code>v1.5.1</code> files/directories into your existing version <code>v1.5.0</code>
+                    </li>
+                    <li>Update database :
+                        <ul>
+                            <li>Open your <code>phpMyAdmin</code></li>
+                            <li>Go to your database and select import tab.</li>
+                            <li>Now in latest version go to <code>app/database/releases/v1.5.1/</code> you can find
+                                <code>v1.5.1.sql</code></li>
+                            <li>Select that sql file and import it.</li>
+                        </ul>
+                    </li>
+                    <li>That's it!, you are ready to go with new version <code>v1.5.1</code></li>
+                </ul>
+                <h3 id="upgrading-from-v1-4-0-to-v1-5-0"><a href="#upgrading-from-v1-4-0-to-v1-5-0"
+                                                            class="header-anchor">#</a> Upgrading from v1.4.0 to v1.5.0
+                </h3> <h4 id="for-technical-users-8"><a href="#for-technical-users-8" class="header-anchor">#</a> For
+                    Technical Users:</h4>
+                <ul>
+                    <li>Download <code>v1.5.0</code></li>
+                    <li>Backup you current version files and DB</li>
+                    <li>If you have manually changed any files then please take a backup of them. After replacing files,
+                        you can again get that portion of code into some particular files.
+                    </li>
+                    <li>Replace <code>v1.5.0</code> files into your existing version <code>v1.4.0</code></li>
+                    <li>Run <code>php artisan migrate</code></li>
+                    <li>Run <code>composer install</code> to update composer dependencies</li>
+                    <li>And at last Run <code>npm run dev</code> to make new build</li>
+                    <li>That's it!, you are ready to go with new version <code>v1.5.0</code></li>
+                </ul>
+                <h4 id="for-non-technical-users-8"><a href="#for-non-technical-users-8" class="header-anchor">#</a> For
+                    Non Technical Users:</h4>
+                <ul>
+                    <li>Download <code>v1.5.0</code></li>
+                    <li>Backup you current version files and DB</li>
+                    <li>If you have manually changed any files then please take a backup of them. After replacing files,
+                        you can again get that portion of code into some particular files.
+                    </li>
+                    <li>Replace <code>v1.5.0</code> files/directories into your existing version <code>v1.4.0</code>
+                    </li>
+                    <li>Update database :
+                        <ul>
+                            <li>Open your <code>phpMyAdmin</code></li>
+                            <li>Go to your database and select import tab.</li>
+                            <li>Now in latest version go to <code>app/database/releases/v1.5.0/</code> you can find
+                                <code>v1.5.0.sql</code></li>
+                            <li>Select that sql file and import it.</li>
+                        </ul>
+                    </li>
+                    <li>That's it!, you are ready to go with new version <code>v1.5.0</code></li>
+                </ul>
+                <h3 id="upgrading-from-v1-3-1-to-v1-4-0"><a href="#upgrading-from-v1-3-1-to-v1-4-0"
+                                                            class="header-anchor">#</a> Upgrading from v1.3.1 to v1.4.0
+                </h3> <h4 id="for-technical-users-9"><a href="#for-technical-users-9" class="header-anchor">#</a> For
+                    Technical Users:</h4>
+                <ul>
+                    <li>Download <code>v1.4.0</code></li>
+                    <li>Backup you current version files and DB</li>
+                    <li>If you have manually changed any files then please take a backup of them. After replacing files,
+                        you can again get that portion of code into some particular files.
+                    </li>
+                    <li>Replace <code>v1.4.0</code> files into your existing version <code>v1.3.1</code></li>
+                    <li>Run <code>php artisan migrate</code></li>
+                    <li>Run <code>composer install</code> to update composer dependencies</li>
+                    <li>And at last Run <code>npm run dev</code> to make new build</li>
+                    <li>That's it!, you are ready to go with new version <code>v1.4.0</code></li>
+                </ul>
+                <h4 id="for-non-technical-users-9"><a href="#for-non-technical-users-9" class="header-anchor">#</a> For
+                    Non Technical Users:</h4>
+                <ul>
+                    <li>Download <code>v1.4.0</code></li>
+                    <li>Backup you current version files and DB</li>
+                    <li>If you have manually changed any files then please take a backup of them. After replacing files,
+                        you can again get that portion of code into some particular files.
+                    </li>
+                    <li>Replace <code>v1.4.0</code> files/directories into your existing version <code>v1.3.1</code>
+                    </li>
+                    <li>Update database :
+                        <ul>
+                            <li>Open your <code>phpMyAdmin</code></li>
+                            <li>Go to your database and select import tab.</li>
+                            <li>Now in latest version go to <code>app/database/releases/v1.4.0/</code> you can find
+                                <code>v1.4.0.sql</code></li>
+                            <li>Select that sql file and import it.</li>
+                        </ul>
+                    </li>
+                    <li>That's it!, you are ready to go with new version <code>v1.4.0</code></li>
+                </ul>
+                <h3 id="upgrading-from-v1-3-0-to-v1-3-1"><a href="#upgrading-from-v1-3-0-to-v1-3-1"
+                                                            class="header-anchor">#</a> Upgrading from v1.3.0 to v1.3.1
+                </h3> <h4 id="for-technical-users-10"><a href="#for-technical-users-10" class="header-anchor">#</a> For
+                    Technical Users:</h4>
+                <ul>
+                    <li>Download <code>v1.3.1</code></li>
+                    <li>Backup you current version files and DB</li>
+                    <li>If you have manually changed any files then please take a backup of them. After replacing files,
+                        you can again get that portion of code into some particular files.
+                    </li>
+                    <li>Replace <code>v1.3.1</code> files into your existing version <code>v1.3.0</code></li>
+                    <li>Run <code>php artisan migrate</code></li>
+                    <li>Run <code>composer install</code> to update composer dependencies</li>
+                    <li>And at last Run <code>npm run dev</code> to make new build</li>
+                    <li>That's it!, you are ready to go with new version <code>v1.3.1</code></li>
+                </ul>
+                <h4 id="for-non-technical-users-10"><a href="#for-non-technical-users-10" class="header-anchor">#</a>
+                    For Non Technical Users:</h4>
+                <ul>
+                    <li>Download <code>v1.3.1</code></li>
+                    <li>Backup you current version files and DB</li>
+                    <li>If you have manually changed any files then please take a backup of them. After replacing files,
+                        you can again get that portion of code into some particular files.
+                    </li>
+                    <li>Replace <code>v1.3.1</code> files/directories into your existing version <code>v1.3.0</code>
+                    </li>
+                    <li>Update database :
+                        <ul>
+                            <li>Open your <code>phpMyAdmin</code></li>
+                            <li>Go to your database and select import tab.</li>
+                            <li>Now in latest version go to <code>app/database/releases/v1.3.1/</code> you can find
+                                <code>v1.3.1.sql</code></li>
+                            <li>Select that sql file and import it.</li>
+                        </ul>
+                    </li>
+                    <li>That's it!, you are ready to go with new version <code>v1.3.1</code></li>
+                </ul>
+                <h3 id="upgrading-from-v1-2-0-to-v1-3-0"><a href="#upgrading-from-v1-2-0-to-v1-3-0"
+                                                            class="header-anchor">#</a> Upgrading from v1.2.0 to v1.3.0
+                </h3> <h4 id="for-technical-users-11"><a href="#for-technical-users-11" class="header-anchor">#</a> For
+                    Technical Users:</h4>
+                <ul>
+                    <li>Download <code>v1.3.0</code></li>
+                    <li>Backup you current version files and DB</li>
+                    <li>If you have manually changed any files then please take a backup of them. After replacing files,
+                        you can again get that portion of code into some particular files.
+                    </li>
+                    <li>Replace <code>v1.3.0</code> files into your existing version <code>v1.2.0</code></li>
+                    <li>Run <code>npm install</code></li>
+                    <li>And at last Run <code>npm run dev</code> to make new build</li>
+                    <li>Run <code>php artisan migrate</code></li>
+                    <li>That's it!, you are ready to go with new version <code>v1.3.0</code></li>
+                </ul>
+                <h4 id="for-non-technical-users-11"><a href="#for-non-technical-users-11" class="header-anchor">#</a>
+                    For Non Technical Users:</h4>
+                <ul>
+                    <li>Download <code>v1.3.0</code></li>
+                    <li>Backup you current version files and DB</li>
+                    <li>If you have manually changed any files then please take a backup of them. After replacing files,
+                        you can again get that portion of code into some particular files.
+                    </li>
+                    <li>Replace <code>v1.3.0</code> files/directories into your existing version <code>v1.2.0</code>
+                    </li>
+                    <li>Update database :
+                        <ul>
+                            <li>Open your <code>phpMyAdmin</code></li>
+                            <li>Go to your database and select import tab.</li>
+                            <li>Now in latest version go to <code>app/database/releases/v1.3.0/</code> you can find
+                                <code>v1.3.0.sql</code></li>
+                            <li>Select that sql file and import it.</li>
+                        </ul>
+                    </li>
+                    <li>That's it!, you are ready to go with new version <code>v1.3.0</code></li>
+                </ul>
+                <h3 id="upgrading-from-v1-1-1-to-v1-2-0"><a href="#upgrading-from-v1-1-1-to-v1-2-0"
+                                                            class="header-anchor">#</a> Upgrading from v1.1.1 to v1.2.0
+                </h3> <h4 id="for-technical-users-12"><a href="#for-technical-users-12" class="header-anchor">#</a> For
+                    Technical Users:</h4>
+                <ul>
+                    <li>Download <code>v1.2.0</code></li>
+                    <li>Backup you current version files and DB</li>
+                    <li>If you have manually changed any files then please take a backup of them. After replacing files,
+                        you can again get that portion of code into some particular files.
+                    </li>
+                    <li>Replace <code>v1.2.0</code> files into your existing version <code>v1.1.1</code></li>
+                    <li>Run <code>npm install</code></li>
+                    <li>And at last Run <code>npm run dev</code> to make new build</li>
+                    <li>Run <code>php artisan db:seed --class=AddLabTechnicianPermissionSeeder</code></li>
+                    <li>That's it!, you are ready to go with new version <code>v1.2.0</code></li>
+                </ul>
+                <h4 id="for-non-technical-users-12"><a href="#for-non-technical-users-12" class="header-anchor">#</a>
+                    For Non Technical Users:</h4>
+                <ul>
+                    <li>Download <code>v1.2.0</code></li>
+                    <li>Backup you current version files and DB</li>
+                    <li>If you have manually changed any files then please take a backup of them. After replacing files,
+                        you can again get that portion of code into some particular files.
+                    </li>
+                    <li>Replace <code>v1.2.0</code> files/directories into your existing version <code>v1.1.1</code>
+                    </li>
+                    <li>That's it!, you are ready to go with new version <code>v1.2.0</code></li>
+                </ul>
+                <h3 id="upgrading-from-v1-1-0-to-v1-1-1"><a href="#upgrading-from-v1-1-0-to-v1-1-1"
+                                                            class="header-anchor">#</a> Upgrading from v1.1.0 to v1.1.1
+                </h3> <h4 id="for-technical-users-13"><a href="#for-technical-users-13" class="header-anchor">#</a> For
+                    Technical Users:</h4>
+                <ul>
+                    <li>Download <code>v1.1.1</code></li>
+                    <li>Backup you current version files and DB</li>
+                    <li>If you have manually changed any files then please take a backup of them. After replacing files,
+                        you can again get that portion of code into some particular files.
+                    </li>
+                    <li>Replace <code>v1.1.1</code> files into your existing version <code>v1.1.0</code></li>
+                    <li>Run <code>composer install</code></li>
+                    <li>Run <code>npm install</code></li>
+                    <li>And at last Run <code>npm run dev</code> to make new build</li>
+                    <li>That's it!, you are ready to go with new version <code>v1.1.1</code></li>
+                </ul>
+                <h4 id="for-non-technical-users-13"><a href="#for-non-technical-users-13" class="header-anchor">#</a>
+                    For Non Technical Users:</h4>
+                <ul>
+                    <li>Download <code>v1.1.1</code></li>
+                    <li>Backup you current version files and DB</li>
+                    <li>If you have manually changed any files then please take a backup of them. After replacing files,
+                        you can again get that portion of code into some particular files.
+                    </li>
+                    <li>Replace <code>v1.1.1</code> files/directories into your existing version <code>v1.1.0</code>
+                    </li>
+                    <li>That's it!, you are ready to go with new version <code>v1.1.1</code></li>
+                </ul>
+                <h3 id="upgrading-from-v1-0-0-to-v1-1-0"><a href="#upgrading-from-v1-0-0-to-v1-1-0"
+                                                            class="header-anchor">#</a> Upgrading from v1.0.0 to v1.1.0
+                </h3> <h4 id="for-technical-users-14"><a href="#for-technical-users-14" class="header-anchor">#</a> For
+                    Technical Users:</h4>
+                <ul>
+                    <li>Download <code>v1.1.0</code></li>
+                    <li>Backup you current version files and DB</li>
+                    <li>If you have manually changed any files then please take a backup of them. After replacing files,
+                        you can again get that portion of code into some particular files.
+                    </li>
+                    <li>Replace <code>v1.1.0</code> files into your existing version <code>v1.0.0</code></li>
+                    <li>Run <code>composer install</code></li>
+                    <li>Run <code>php artisan migrate</code></li>
+                    <li>Run <code>npm install</code></li>
+                    <li>And at last Run <code>npm run dev</code> to make new build</li>
+                    <li>That's it!, you are ready to go with new version <code>v1.1.0</code></li>
+                </ul>
+                <h4 id="for-non-technical-users-14"><a href="#for-non-technical-users-14" class="header-anchor">#</a>
+                    For Non Technical Users:</h4>
+                <ul>
+                    <li>Download <code>v1.1.0</code></li>
+                    <li>Backup you current version files and DB</li>
+                    <li>If you have manually changed any files then please take a backup of them. After replacing files,
+                        you can again get that portion of code into some particular files.
+                    </li>
+                    <li>Replace <code>v1.1.0</code> files/directories into your existing version <code>v1.0.0</code>
+                    </li>
+                    <li>Update database :
+                        <ul>
+                            <li>Open your <code>phpMyAdmin</code></li>
+                            <li>Go to your database and select import tab.</li>
+                            <li>Now in latest version go to <code>app/database/releases/v1.1.0/</code> you can find
+                                <code>v1.1.0.sql</code></li>
+                            <li>Select that sql file and import it.</li>
+                        </ul>
+                    </li>
+                    <li>That's it!, you are ready to go with new version <code>v1.1.0</code></li>
+                </ul>
+            </div>
+            <footer class="page-edit"><!----> <!----></footer> <!----> </main>
+    </div>
+    <div class="global-ui"></div>
+</div>
+<script src="../js/styles.js" defer></script>
+<script src="../js/2.js" defer></script>
+<script src="../js/12.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.fs-12 {
+    font-size: 12px;
+}
+.fs-15 {
+    font-size: 15px;
+}
+.flex-1 {
+    flex: 1;
+}
+.object-fit-cover {
+    object-fit: cover;
+}
+
+.card {
+    border-radius: 12px;
+    overflow: hidden;
+    border: none;
+    .smart-card-header {
+        background-color: #161e54;
+        padding: 14px 25px;
+        .logo {
+            width: auto;
+            min-width: 40px;
+            height: 40px;
+        }
+    }
+
+    .card-body {
+        padding: 20px 25px;
+        .card-img {
+            width: 110px;
+            min-width: 110px;
+            height: 150px;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+        .patient-desc {
+            tr {
+                td {
+                    height: 20px;
+                    padding: 4px 0;
+                    font-size: 15px;
+                    color: #5a5a5a;
+                }
+            }
+        }
+        .qr-code {
+            width: 80px;
+            height: 80px;
+        }
+        .address-text {
+            font-size: 15px;
+            color: #5a5a5a;
+        }
+        .signature-text {
+            color: #909090;
+        }
+    }
+}

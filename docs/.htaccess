@@ -1,0 +1,4 @@
+Redirect 301 /index.html http://infyom.com/infyjobs
+Redirect 301 /docs/index.html http://infyom.com/infyhms/docs/introduction
+Redirect 301 /releases/index.html http://infyom.com/infyhms/docs/releases
+Redirect 301 /upgrade/index.html http://infyom.com/infyhms/docs/upgrade-guide

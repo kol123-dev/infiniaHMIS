@@ -1,0 +1,158 @@
+
+
+@page {
+    margin: 20px 0 !important;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.w-50 {
+    width: 50% !important;
+}
+
+.text-end {
+    text-align: right !important;
+
+}
+
+.text-center {
+    text-align: center !important;
+
+}
+
+.ms-auto {
+    margin-left: auto !important;
+}
+
+.px-30 {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.mb-0 {
+    margin-bottom: 0 !important;
+}
+
+.lh-1 {
+    line-height: 1 !important;
+}
+
+.company-logo {
+    margin: 0 auto;
+}
+
+.company-logo img {
+    width: auto;
+    height: 80px;
+}
+
+.vertical-align-top {
+    vertical-align: top !important;
+}
+
+.desc {
+    padding: 10px;
+    border-radius: 10px;
+    width: 48%;
+}
+
+.bg-light {
+    background-color: #f8f9fa;
+}
+
+hr {
+    margin: 15px 0px;
+    color: #f8f9fa;
+    background-color: #f8f9fa;
+    border-color: #f8f9fa;
+}
+
+.fw-6 {
+    font-weight: bold;
+}
+
+.mb-20 {
+    margin-bottom: 15px;
+}
+
+.heading {
+    padding: 10px;
+    background-color: #f8f9fa;
+    width: 250px;
+}
+
+.lh-2 {
+    line-height: 1.5 !important;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    padding: 30px;
+    font-size: 14px;
+}
+
+.font-color-gray {
+    color: #7a7a7a;
+}
+
+.main-heading {
+    font-size: 34px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.header-right {
+    text-align: right;
+    vertical-align: top;
+}
+
+.logo, .hospital-name {
+    margin-bottom: 8px;
+}
+
+.font-weight-bold {
+    font-weight: bold;
+}
+
+.address {
+    margin-top: 30px;
+}
+
+.address tr:first-child td {
+    padding-bottom: 10px;
+}
+
+.items-table {
+    width: 100%;
+    border: 0;
+    border-collapse: collapse;
+    margin-top: 40px;
+}
+
+.items-table thead {
+    background: #2f353a;
+    color: #fff;
+}
+
+.items-table td, .items-table th {
+    padding: 8px;
+    font-size: 14px;
+    border-bottom: 1px solid #ccc;
+    text-align: left;
+    vertical-align: top;
+}
+
+.invoice-footer {
+    width: 100%;
+    float: right;
+    text-align: right;
+}
+
+.number-align {
+    text-align: right !important;
+}
+.text-start {
+    text-align: left;
+}
